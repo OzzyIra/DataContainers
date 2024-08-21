@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 #define tab "\t"
@@ -28,7 +29,7 @@ template<typename T>class List
 #endif // DEBUG
 
 		}
-		friend class List<T>;
+		friend class List;
 	}*Head, * Tail;	
 	
 	size_t size;	
@@ -316,7 +317,7 @@ template <typename T>List<T> operator+(const List<T>& left, const List<T>& right
 
 //#define BASE_CHECK
 //#define ITERATORS_CHECK
-#define OPERATOR_PLUS_CHECK
+//#define OPERATOR_PLUS_CHECK
 
 void main()
 {
